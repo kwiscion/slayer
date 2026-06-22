@@ -1,0 +1,85 @@
+{
+  "bench": "polnative_v1",
+  "data": "slayer-data/polnative/polnative_v1.jsonl",
+  "n": 111,
+  "judge": "qwen/qwen3.5-122b-a10b",
+  "skala": "pass=1, mixed=0.5, fail=0; wynik 0-100",
+  "note": "eval_only; itemy w prywatnym repo slayer-datasets, nie trenować",
+  "results": {
+    "qwen27b": {
+      "backend": "openrouter",
+      "tag": "qwen/qwen3.5-27b",
+      "temp": 0.7,
+      "score": {
+        "all": 58.6,
+        "dom:EQ": 62.5,
+        "dom:fleksja": 55.6,
+        "dom:frazeologia": 68.2,
+        "dom:kalibracja": 40.0,
+        "dom:leksyka": 85.0,
+        "dom:literatura": 15.6,
+        "dom:naturalnosc": 42.9,
+        "dom:ortografia": 68.2,
+        "dom:realia": 88.9,
+        "dom:rejestr": 62.5,
+        "dom:skladnia": 70.8,
+        "tryb:auto": 60.7,
+        "tryb:judge": 54.9
+      },
+      "n": 111,
+      "n_scored": 111,
+      "empty_answers": 0,
+      "judge_errors": 0
+    },
+    "slayer-v3-nothink": {
+      "backend": "file",
+      "tag": "/tmp/answers_slayer_v3.jsonl",
+      "temp": null,
+      "score": {
+        "all": 63.1,
+        "dom:EQ": 75.0,
+        "dom:fleksja": 69.4,
+        "dom:frazeologia": 50.0,
+        "dom:kalibracja": 20.0,
+        "dom:leksyka": 80.0,
+        "dom:literatura": 25.0,
+        "dom:naturalnosc": 71.4,
+        "dom:ortografia": 72.7,
+        "dom:realia": 66.7,
+        "dom:rejestr": 62.5,
+        "dom:skladnia": 95.8,
+        "tryb:auto": 63.6,
+        "tryb:judge": 62.2
+      },
+      "n": 111,
+      "n_scored": 111,
+      "empty_answers": 0,
+      "judge_errors": 0
+    },
+    "qwen27b-local-nothink": {
+      "backend": "file",
+      "tag": "/tmp/answers_qwen27b_local.jsonl",
+      "temp": null,
+      "score": {
+        "all": 60.4,
+        "dom:EQ": 56.2,
+        "dom:fleksja": 58.3,
+        "dom:frazeologia": 54.5,
+        "dom:kalibracja": 40.0,
+        "dom:leksyka": 90.0,
+        "dom:literatura": 28.1,
+        "dom:naturalnosc": 50.0,
+        "dom:ortografia": 77.3,
+        "dom:realia": 66.7,
+        "dom:rejestr": 62.5,
+        "dom:skladnia": 83.3,
+        "tryb:auto": 62.9,
+        "tryb:judge": 56.1
+      },
+      "n": 111,
+      "n_scored": 111,
+      "empty_answers": 0,
+      "judge_errors": 0
+    }
+  }
+}

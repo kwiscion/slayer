@@ -1,0 +1,163 @@
+{
+  "now_ts": 1780659977.031552,
+  "now": "2026-06-05 13:46:17",
+  "started_ts": 1780598935.0,
+  "deadline_ts": 1780678135.0,
+  "max_hours": 22,
+  "phase": "Faza B — keep-warm (wiele seedów)",
+  "jobs_faza_a": [
+    {
+      "label": "Belebele PL (full 900)",
+      "key": "belebele",
+      "state": "done"
+    },
+    {
+      "label": "LLMzSzŁ (FULL 18821)",
+      "key": "llmzszl",
+      "state": "done"
+    },
+    {
+      "label": "PES medyczny (FULL)",
+      "key": "pes",
+      "state": "done"
+    },
+    {
+      "label": "PoQuAD (1500 + sędzia)",
+      "key": "poquad",
+      "state": "done"
+    },
+    {
+      "label": "FLORES-200 PL↔EN (600)",
+      "key": "flores",
+      "state": "done"
+    },
+    {
+      "label": "INCLUDE-44 (PL, full)",
+      "key": "include",
+      "state": "done"
+    },
+    {
+      "label": "Belebele EN (full 900)",
+      "key": "belebele_en",
+      "state": "done"
+    },
+    {
+      "label": "ARC-Challenge (EN, full)",
+      "key": "arc",
+      "state": "done"
+    },
+    {
+      "label": "MMLU (EN, 2000)",
+      "key": "mmlu",
+      "state": "done"
+    },
+    {
+      "label": "GSM8K (EN, 600)",
+      "key": "gsm8k",
+      "state": "done"
+    }
+  ],
+  "current": {
+    "label": "PoQuAD (1000+sędzia,s45)",
+    "pct": 0,
+    "done": 0,
+    "total": 0,
+    "eta_secs": null
+  },
+  "keep_warm": true,
+  "hermes": "paused",
+  "tally": {
+    "Qwen3.5-9B": 8
+  },
+  "benchmarks_done": 9,
+  "results": [
+    {
+      "benchmark": "llmzszl",
+      "label": "LLMzSzŁ",
+      "unit": "%",
+      "metric": "accuracy (MCQ, exact letter)",
+      "n": 18821,
+      "runs": 4,
+      "qwen": 58.2
+    },
+    {
+      "benchmark": "pes",
+      "label": "PES (medyczny)",
+      "unit": "%",
+      "metric": "accuracy (MCQ, exact letter)",
+      "n": 70010,
+      "runs": 4,
+      "qwen": 52.7
+    },
+    {
+      "benchmark": "belebele",
+      "label": "Belebele (PL)",
+      "unit": "%",
+      "metric": "accuracy (MCQ, exact letter)",
+      "n": 900,
+      "runs": 4,
+      "qwen": 89.4
+    },
+    {
+      "benchmark": "poquad",
+      "label": "PoQuAD",
+      "unit": "%",
+      "metric": "judged_accuracy (sędzia-LLM)",
+      "n": 1500,
+      "runs": 4,
+      "qwen": 82.8
+    },
+    {
+      "benchmark": "flores",
+      "label": "FLORES-200 PL↔EN",
+      "unit": "chrF",
+      "metric": "chrF (PL↔EN, sacrebleu)",
+      "n": 600,
+      "runs": 3,
+      "qwen": 55.0
+    },
+    {
+      "benchmark": "belebele_en",
+      "label": "Belebele (EN)",
+      "unit": "%",
+      "metric": "accuracy (MCQ, exact letter) [EN regresja]",
+      "n": 900,
+      "runs": 4,
+      "qwen": 94.9
+    },
+    {
+      "benchmark": "arc",
+      "label": "ARC-C (EN)",
+      "unit": "%",
+      "metric": "accuracy (MCQ, exact letter) [EN regresja]",
+      "n": 1172,
+      "runs": 4,
+      "qwen": 94.1
+    },
+    {
+      "benchmark": "mmlu",
+      "label": "MMLU (EN)",
+      "unit": "%",
+      "metric": "accuracy (MCQ, exact letter) [EN regresja]",
+      "n": 2000,
+      "runs": 3,
+      "qwen": 77.1
+    },
+    {
+      "benchmark": "gsm8k",
+      "label": "GSM8K (EN)",
+      "unit": "%",
+      "metric": "accuracy (exact, final int) [EN regresja]",
+      "n": 600,
+      "runs": 3,
+      "qwen": 90.5
+    }
+  ],
+  "faza_a": {
+    "done_jobs": 10,
+    "total_jobs": 10,
+    "overall_pct": 100.0,
+    "eta_secs": 0,
+    "projected_done_ts": 1780659977
+  }
+}

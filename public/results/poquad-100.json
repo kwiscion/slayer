@@ -1,0 +1,24 @@
+{
+  "benchmark": "PoQuAD (clarin-pl/poquad)",
+  "split": "poquad-dev.json",
+  "n": 100,
+  "sample_seed": 42,
+  "sample_composition": { "answerable": 85, "unanswerable": 15 },
+  "runner": "ollama on simp (RTX 3090), 4-bit GGUF, temperature 0, think=false",
+  "judge": "Qwen3.5-35B-A3B (llama.cpp :8088), reference-based TAK/NIE correctness, enable_thinking=false",
+  "decisive_metric": "judged_accuracy",
+  "date": "2026-06-04",
+  "models": {
+    "Qwen3.5-9B": {
+      "tag": "qwen3.5:9b",
+      "judged_accuracy": 77.0,
+      "judged_answerable_acc": 87.1,
+      "unanswerable_abstain": "3/15",
+      "overall_F1": 61.2,
+      "answerable_F1": 68.5,
+      "answer_recall": 84.0,
+      "secs": 53.5
+    }
+  },
+  "interpretation": "Metryka rozstrzygajaca = trafnosc oceniona przez sedziego-LLM (Qwen3.5-35B ocenia poprawnosc merytoryczna niezaleznie od formy/odmiany): Qwen3.5-9B 77.0 (odpowiadalne 87.1). PODKATEGORIA: surowy SQuAD token-F1 = 68.5 na odpowiadalnych - Qwen odpowiada zwiezle/ekstraktywnie. Odmowa na pytania nieodpowiadalne slaba (3/15)."
+}

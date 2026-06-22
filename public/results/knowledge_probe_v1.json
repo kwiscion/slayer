@@ -1,0 +1,31 @@
+{
+  "probe": "slayer-data/knowledge/probe_v1.jsonl",
+  "n": 71,
+  "seed": 42,
+  "judge": "qwen/qwen3.5-122b-a10b",
+  "note": "probe z korpusu CPT; doki QA z exclusion list NIE moga wejsc do treningu",
+  "results": {
+    "qwen9b": {
+      "backend": "ollama",
+      "tag": "qwen3.5:9b",
+      "acc": {
+        "polonica": 18.4,
+        "all": 23.9,
+        "ogolne": 30.3
+      },
+      "n_judged": 71,
+      "empty_answers": 0
+    },
+    "qwen27b": {
+      "backend": "openrouter",
+      "tag": "qwen/qwen3.5-27b",
+      "acc": {
+        "polonica": 15.8,
+        "all": 23.9,
+        "ogolne": 33.3
+      },
+      "n_judged": 71,
+      "empty_answers": 0
+    }
+  }
+}
